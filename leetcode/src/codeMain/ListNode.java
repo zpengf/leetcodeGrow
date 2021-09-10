@@ -1,4 +1,6 @@
- public class ListNode {
+package codeMain;
+
+public class ListNode {
     ListNode next;
     int val;
     ListNode() {}
