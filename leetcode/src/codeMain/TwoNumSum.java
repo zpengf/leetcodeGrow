@@ -23,17 +23,7 @@ public class TwoNumSum {
      * 输入：nums = [3,3], target = 6
      * 输出：[0,1]
      *
-     * @param args
      */
-    public static void main (String args[]){
-        int[] nums ={3,3};
-        int target = 6;
-        int[] result = twoSum(nums,target);
-        for(int a : result){
-            System.out.print(a+",");
-        }
-
-    }
 
     public static int[] twoSum(int[] nums, int target) {
         int result[]  = new int[2];

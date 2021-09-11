@@ -1,8 +1,8 @@
 package codeMain;
 
-import org.junit.Test;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 /** 
 * TwoNumSum Tester. 
@@ -37,7 +37,17 @@ public void testMain() throws Exception {
 * 
 */ 
 @Test
-public void testTwoSum() throws Exception { 
+public void testTwoSum() throws Exception {
+    TwoNumSum test = new TwoNumSum();
+
+    int[] nums ={3,3};
+    int target = 6;
+    int[] result = test.twoSum(nums,target);
+    for(int a : result){
+        System.out.print(a+",");
+    }
+
+
 //TODO: Test goes here... 
 } 
 

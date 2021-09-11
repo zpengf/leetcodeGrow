@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.ops4j.pax.tipi.hamcrest.core-1.3.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../javaJartools/org.ops4j.pax.tipi.hamcrest.core-1.3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
