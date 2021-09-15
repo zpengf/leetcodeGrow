@@ -1,4 +1,4 @@
-package test.codeMain; 
+package codeMain;
 
 import codeMain.SumTargetArray;
 import org.junit.Test;
