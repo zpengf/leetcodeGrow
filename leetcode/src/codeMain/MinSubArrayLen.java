@@ -20,17 +20,18 @@ import java.util.*;
  */
 public class MinSubArrayLen {
 
+    // 滑动窗口
     public int minSubArrayLen(int s, int[] nums) {
-        int i = 0;
+        int left = 0;
         int sum = 0;
-        int len = 0;
-        for (int j = 0; j < nums.length; j++) {
-            sum += nums[j];
+        int result = Integer.MAX_VALUE;
+        for (int right = 0; right < nums.length; right++) {
+            sum += nums[right];
             while (sum >= s) {
-                len = len == 0 ? j - i + 1 : Math.min(len, j - i + 1);
-                sum -= nums[i++];
+                result = Math.min(result, right - left + 1);
+                sum -= nums[left++];
             }
         }
-        return len;
+        return result == Integer.MAX_VALUE ? 0 : result;
     }
 }
